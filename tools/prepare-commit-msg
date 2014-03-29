@@ -1,0 +1,37 @@
+#!/bin/bash
+# Hook that prepares the commit message presented to the user on commit by
+# adding lines for the ticket number and corresponding URL.
+
+COMMIT_MSG_FILE="$1"
+TEMP_FILE=`mktemp`
+GITHUB_TICKET_URL_BASE="https://github.com/mfiedler/openoffice-vorlagen/issues/"
+TICKET_ID_ALREADY_PRESENT="false"
+TICKET_URL_ALREADY_PRESENT="false"
+
+grep --quiet "^GitHub-Ticket-Id: " "$COMMIT_MSG_FILE" \
+		&& TICKET_ID_ALREADY_PRESENT="true"
+grep --quiet "^GitHub-Ticket-URL: " "$COMMIT_MSG_FILE" \
+		&& TICKET_URL_ALREADY_PRESENT="true"
+
+
+if [ "$TICKET_ID_ALREADY_PRESENT" = "true" ] && [ "$TICKET_URL_ALREADY_PRESENT" = "true" ] ; then
+	# nothing to do
+	exit
+fi
+
+echo > $TEMP_FILE
+echo >> $TEMP_FILE
+echo "# Add the ticket id at the end of the following two lines" >> $TEMP_FILE
+
+if [ "$TICKET_ID_ALREADY_PRESENT" = "false" ] ; then
+	echo "GitHub-Ticket-Id: " >> $TEMP_FILE
+fi
+
+if [ "$TICKET_URL_ALREADY_PRESENT" = "false" ] ; then
+	echo "GitHub-Ticket-URL: $GITHUB_TICKET_URL_BASE" >> $TEMP_FILE
+fi
+
+cat "$COMMIT_MSG_FILE" >> $TEMP_FILE
+cat $TEMP_FILE > "$COMMIT_MSG_FILE"
+
+rm $TEMP_FILE

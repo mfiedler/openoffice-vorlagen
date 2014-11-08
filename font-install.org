@@ -1,0 +1,22 @@
+#+TITLE: Installation von Schriftarten - Installing fonts
+#+AUTHOR:     Michael Fiedler <michael.fiedler87@gmx.de>
+#+OPTIONS:   ^:{} toc:nil
+
+
+* Deutsch
+
+Um eine Schriftart zu installieren, muss jede Schriftdatei einzeln geoeffnet
+werden.  Im Fenster, das sich oeffnet, gibt es einen Knopf zur Installation.
+Unter Linux koennen alternativ alle zu installierenden Dateien auf einmal in
+das Verzeichnis ~/.fonts kopiert werden.  Im Anschluss daran muss
+LibreOffice/OpenOffice ggf. neu gestartet werden, damit die neuen Schriftarten
+verwendet werden koennen.
+
+
+
+* English
+
+In order to install a font in your operating system, open each font file and
+click on the button for installation of your font viewer.  On Linux, you can
+also copy all font files into the folder ~/.fonts.  Thereafter, you may need
+to restart LibreOffice/OpenOffice to be able to use the new font.

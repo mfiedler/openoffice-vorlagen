@@ -1,0 +1,35 @@
+#+TITLE: Dokumentvorlagen für Libreoffice und OpenOffice
+#+AUTHOR: Michael Fiedler <info /AT/ michael-fiedler /DOT/ net>
+#+OPTIONS: ^:{} toc:nil
+
+* Enthaltene Vorlagen
+
+  - Privatbriefe mit der Empfängeranschrift im Sichtfenster eines
+    entsprechenden Briefumschlags und automatischer
+    Silbentrennung
+
+  - Lebenslauf ähnlich zum LaTeX-Paket moderncv
+
+  - angepasste Standard-/Berichtvorlagen (ein-/zweispaltig)
+
+  - Spielzettelvorlage für Kniffel o. Ä.
+
+
+* Schriftarten
+
+In den Vorlagen werden folgende Schriftarten verwendet:
+
+  - Arial (ersetzbar durch [[https://fedorahosted.org/liberation-fonts/][Liberation Sans]] u. a.)
+
+  - Times New Roman (ersetzbar durch [[https://fedorahosted.org/liberation-fonts/][Liberation Serif]] u. a.)
+
+  - [[http://www.gust.org.pl/projects/e-foundry/latin-modern][Latin Modern]] (abgeleitet von Computer Modern, der
+    LaTeX-Standardschriftart)
+
+  - Palatino in der Form von [[http://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella][TeX Gyre Pagella]]
+
+  - [[http://www.georgduffner.at/ebgaramond/de/download.html][EB Garamond]]
+
+
+Informationen zur Einrichtung von neuen Schriftarten können der Datei
+~font-install.txt~ entnommen werden.

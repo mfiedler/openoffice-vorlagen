@@ -40,7 +40,16 @@
 
 
   Informationen zur Einrichtung von neuen Schriftarten können der Datei
-  `font-install.txt' entnommen werden.
+  `font-install.txt' entnommen werden.  Für einige Vorlagen gibt es
+  jeweil eine Variante, die ohne die Einrichtung auskommt, da alle
+  notwendigen Schriftarten ins Vorlagendokument integriert sind;
+  erkennbar ist dies an `font-embedded' im Dateinamen.  Auch alle von
+  diesen Vorlagen abgeleiteten Dokumente enthalten eine eigene Kopie der
+  Schriftarten.  Entsprechend ist auch die Dateigröße deutlich erhöht.
+  Falls die Schriftarten nachträglich noch systemweit eingerichtet
+  werden und daher nicht mehr eingebettet sein müssen, kann dies über
+  die Einstellung Datei > Eigenschaften... > Schriftart > Schriftart
+  einbetten abgeschalten werden.
 
 
   [Liberation Sans] https://fedorahosted.org/liberation-fonts/

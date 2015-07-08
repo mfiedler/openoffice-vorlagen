@@ -6,6 +6,20 @@ for all templates:
 for template "Lebenslauf":
     based on a template by a user "cberg" at templates.openoffice.org
 
+Some templates come with fonts embedded.  This license does not apply to these.
+Instead, see the licenses of the respective font for copyright information:
+
+  * EB Garamond
+    http://www.georgduffner.at/ebgaramond/
+    Copyright 2010--2013 by Georg Duffner
+    licensed under the SIL Open Font License, Version 1.1
+
+  * Latin Modern
+    http://www.gust.org.pl/projects/e-foundry/latin-modern
+    Copyright 2003--2009 by B. Jackowski and J.M. Nowacki (on behalf of TeX
+    Users Groups)
+    licensed under the GUST Font License
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

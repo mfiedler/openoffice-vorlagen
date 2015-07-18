@@ -12,6 +12,8 @@
 
   - angepasste Standard-/Berichtvorlagen (ein-/zweispaltig)
 
+  - Buch im Format 13.5 cm x 20.5 cm
+
   - Spielzettelvorlage für Kniffel o. Ä.
 
 
